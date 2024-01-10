@@ -21,5 +21,6 @@ include(${wxWidgets_USE_FILE})
 # Add your executable and link against wxWidgets
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME} ${wxWidgets_LIBRARIES})
+target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/include)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
