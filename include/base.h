@@ -13,6 +13,18 @@ namespace App {
     {
         public:
             MainFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
+            wxButton* HelloWorld;
+            wxTextCtrl* HeyWorld;
+            void OnExit(wxCommandEvent& event);
+            void DeclareText(wxCommandEvent& event);
+
+            DECLARE_EVENT_TABLE()
+    };
+
+    enum
+    {
+        BUTTON_HELLO = wxID_HIGHEST + 1,
+        TEXT_HELLO = wxID_HIGHEST + 2
     };
 
 DECLARE_APP(MainApp)
