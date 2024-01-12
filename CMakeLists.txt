@@ -12,7 +12,7 @@ find_package(wxWidgets COMPONENTS core base REQUIRED)
 
 # set sources
 set(SOURCES
-    src/main.cpp
+    src/base.cpp
 )
 
 # Include wxWidgets headers
